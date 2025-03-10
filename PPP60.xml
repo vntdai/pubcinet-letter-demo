@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title> Pier Paolo Pasolini a Livio Garzanti, 10 marzo 1960 </title>
+				<author ref="macro.xml#pier-paolo-pasolini">Pier Paolo Pasolini</author>
+				<respStmt>
+					<resp>Trascription by</resp>
+					<name xml:id="MDC">Marco De Cristofaro</name>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<edition>Digital edition <date when="2025">2024-2025</date>
+				</edition>
+				<respStmt>
+					<resp>Digital edition project coordinated by</resp>
+					<name>Marco De Cristofaro</name>
+				</respStmt>
+				<respStmt>
+					<resp>Encoding by</resp>
+					<name>Marco De Cristofaro</name>
+				</respStmt>
+				<respStmt>
+					<resp>Encoding revision by</resp>
+					<name>Marco De Cristofaro</name>
+				</respStmt>
+			</editionStmt>
+			<publicationStmt>
+				<authority>Université de Mons</authority>
+				<availability status="free">
+					<p>© Université de Mons</p>
+				</availability>
+				<publisher/>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC
+						4.0</licence>
+				</availability>
+				<idno type="filename">PPP60</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl source="macro.xml#giordano_naldini_2021"/> <!--What does it mean by this source?-->
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<correspDesc>
+				<correspAction type="sent">
+					<persName ref="macro.xml#pier-paolo-pasolini" role="macro.xml#filmmaker">Pier
+						Paolo Pasolini</persName>
+					<placeName ref="https://www.geonames.org/3169070/rome.html">Roma</placeName>
+					<date when="1960-03-10">10 marzo 1960</date>
+				</correspAction>
+				<correspAction type="received">
+					<persName ref="macro.xml#livio-garzanti" role="macro.xml#publisher">Livio
+						Garzanti</persName>
+					<placeName ref="https://www.geonames.org/3173435/milan.html">Milano</placeName>
+					<date>unknown</date>
+				</correspAction>
+				<correspContext>
+					<p>unknown</p>
+				</correspContext>
+			</correspDesc>
+			<langUsage>
+				<language ident="it">Italiano</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
+
+	<text n="PPP60" type="letter" xml:id="PPP60">
+
+		<front/>
+
+		<body xml:lang="it">
+			<div type="letter-body">
+				<opener>
+				<salute>Caro<persName ref="macro.xml#livio-garzanti"> Garzanti</persName></salute>
+				</opener>
+				<p>sì, ho deciso di rimandare <rs
+						ref="macro.xml#notte-brava-script-draft-I" type="bibl" rend="italic">La
+						notte brava</rs><note place="bottom"
+						resp="macro.xml#antonella-giordano macro.xml#nico-naldini">Pubblicata
+						integralmente in <title ref="macro.xml#ali-occhi-azzurri" rend="italic">Alì
+							dagli occhi azzurri</title></note>: non perché è troppo minore, ma
+					perché è minore. Voglio arrivare a <rs
+						ref="macro.xml#mortaccia-draft-I" type="bibl" rend="italic">La
+						mortaccia</rs><note place="bottom"
+						resp="macro.xml#antonella-giordano macro.xml#nico-naldini"><title
+							ref="macro.xml#mortaccia-Ied" rend="italic">La Mortaccia</title>,
+						romanzo iniziato nel 1959, ripreso e interrotto più volte, che infine sarà
+						raccolto, ridotto a poche pagine, in <title
+							ref="macro.xml#ali-occhi-azzurri" rend="italic">Alì dagli occhi
+							azzurri</title></note> non inflazionato: e credo che questo sia un bene
+					per tutti e due. Dopo potrò fare, come lei dice, l’autore che non teme le
+					discussioni troppo sottili: e allora sfornerò uno dopo l’altro i racconti
+					minori, cioè le mie sceneggiature, che saranno, fra un anno: <rs
+						ref="macro.xml#notte-brava-script-draft-I" type="bibl" rend="italic">La
+						notte brava</rs>,
+					<rs ref="macro.xml#puzza-funerale-draft-I" rend="italic">Puzza di
+						funerale</rs>(<rs ref="macro.xml#puzza-funerale-draft-II" type="bibl"
+						rend="italic">Morte di un amico</rs>), <rs
+						ref="macro.xml#comare-secca-script-draft-I" type="bibl" rend="italic">Storie
+						di pecorelle</rs>(<rs ref="macro.xml#comare-secca-script-draft-II">La comare
+						secca</rs>),<rs
+						ref="macro.xml#accattone-script-draft" type="bibl" rend="italic"
+						>Accattone</rs>
+					<rs ref="macro.xml#storia-burina" type="bibl" rend="italic">Storia burina</rs>
+					<rs ref="macro.xml#mamma-roma-script-draft-I" type="bibl" rend="italic">Mamma
+						Roma</rs>
+					<rs ref="macro.xml#rio-grana-Ied" type="bibl"
+						rend="italic">Il Rio della grana</rs> Che poi si potrebbero anche
+					raccogliere in un volume di mille pagine <note place="bottom"
+						resp="macro.xml#antonella-giordano macro.xml#nico-naldini">Dei testi citati
+						saranno raccolti in <rs ref="macro.xml#ali-occhi-azzurri" rend="italic"
+							>Alì dagli occhi azzurri</rs> le sceneggiature de <rs
+							ref="macro.xml#notte-brava-script-Ied" rend="italic">La notte
+							brava</rs>, di <rs ref="macro.xml#accattone-racconto"
+							rend="italic">Accattone</rs> e di <rs
+							ref="macro.xml#mamma-roma-script-IIed" rend="italic">Mamma Roma</rs>
+						insieme a quella de <rs ref="macro.xml#ricotta-script-Ied" rend="italic"
+							>La ricotta</rs>, precedute e seguite da racconti scritti fra il 1950
+						e il 1965</note>. Io quest’anno avrei pronti, anche subito (entro aprile)
+					due libri: <rs ref="macro.xml#passione-ideologia" type="bibl">uno di saggi
+							(<title rend="italic">Passione e ideologia</title>)</rs> e <rs
+						ref="macro.xml#religione-mio-tempo-draft" type="bibl">uno di versi (<title
+							rend="italic">La ricchezza</title>)</rs><note place="bottom"
+						resp="macro.xml#antonella-giordano macro.xml#nico-naldini">primo titolo de
+							<title ref="macro.xml#religione-mio-tempo-Ied" rend="italic">La
+							religione del mio tempo</title></note>: o uno o l’altro vorrei
+					pubblicarlo, perché altrimenti mi si invecchiano nel cassetto. Adesso è il
+					momento giusto, specie per i saggi. Lei deve decidere, e dirmelo subito, che io
+					possa mettermi al lavoro di raccolta e riordinamento. Sto intanto finendo di
+					tradurre <rs ref="macro.xml#orestiade" type="bibl">Eschilo</rs>: 				<!--Eschilo is a name-->
+					so che <persName	
+						ref="macro.xml#giulio-einaudi">Einaudi</persName> le chiederà il
+					permesso di pubblicare l’<rs ref="macro.xml#orestiade" type="bibl" rend="italic"
+						>Orestiade</rs> in un volume antologico che riguarda l’attività del Teatro
+					di <persName ref="macro.xml#vittorio-gassman" >Gassman</persName>. Non credo
+					che la cosa possa danneggiarla, anche perché, dato il poco tempo, non ho potuto
+					dare che delle prime stesure. Se lei trova questo non commerciale, allora dia il
+					permesso di pubblicare dei lunghi frammenti scelti. Finito <rs
+						ref="macro.xml#orestiade" type="bibl">Eschilo</rs>, riaffronterò <persName
+						ref="macro.xml#publio-virgilio">Virgilio</persName>. Per quel che
+					riguarda lo stipendio, lasciamolo così: è per me una forma di risparmio… </p>
+			<closer>
+				<salute>Grazie per la sua lettera, e riceva i più affettuosi saluti dal suo</salute>
+				<signed><persName ref="macro.xml#pier-paolo-pasolini">Pier Paolo
+					Pasolini</persName></signed>
+			</closer>
+			<note place="bottom" resp="macro.xml#antonella-giordano macro.xml#nico-naldini">In <!-- resp to indicate what-->
+				risposta alla presente lettera <persName ref="macro.xml#livio-garzanti">Livio
+					Garzanti</persName> il <date when="1960-03-17">17 marzo 1960</date> tra l’altro
+					scrive:<quote rend="in quotes"> Mi dispiace un po’ dover rinunciare alla <title
+						ref="macro.xml#notte-brava-script" rend="italic">Notte brava</title>. Mi
+					riempie d’ammirazione la sua enorme vitalità. Sono pronto in ogni modo a
+					pubblicare i suoi <title ref="macro.xml#passione-ideologia">Saggi</title>
+					(Ottimo il titolo)</quote></note>
+		</div>
+		</body>
+	</text>
+
+</TEI>

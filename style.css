@@ -1,0 +1,206 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+
+/* Variables */
+:root {
+    --color-background: #f9f9f9;
+    --color-box: #f7f6f3;
+    --color-text: #2c3e50;
+    --color-sepia: #8b5a2b;
+    --color-green: #0D3311;
+    --color-work: #B22222;
+    --color-work-highlight: #FFCDCA;
+    --color-gold: #d4a76a;
+    --color-burgundy: #660033;
+    --color-blue: #5f809b;
+    --color-olive: #5f6c37;
+    --color-parchment: #ebe6d9;
+    --color-leather: #784421;
+    --color-white: #ffffff;
+    --color-persname: #007BA7;
+    --color-persname-highlight: #B8E3E9;
+    --color-event: #2E6F40;
+    --color-event-highlight: #ADEBB3;
+    --color-award: #7F00FF;
+    --color-award-highlight: #D3D3FF;
+    --shadow: rgba(0, 0, 0, 0.08);
+    
+    --font-headings: 'Playfair Display', Georgia, serif;
+    --font-body: 'Libre Baskerville', 'Palatino Linotype', serif;
+    --font-ui: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.4;
+    margin: 0px auto;
+    width: 80%;
+    /* max-width: 1080px; */
+    padding: 20px;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+header{
+    font-family: var(--font-headings);
+    color: var(--color-text);
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 24px;
+    padding-left: 20px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--color-background);
+
+}
+
+section {
+    box-shadow: 0 0 5px var(--shadow);
+    background-color: var(--color-box);
+    border-radius: 5px; 
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+
+section.information, section.tei-metadata, section.notes {
+    font-family: var(--font-ui);
+    font-size: 18px;
+    line-height: 1.4;
+    background: none;
+    box-shadow: none;
+
+}
+
+section.information p, section.tei-metadata p, section.notes p {
+    margin-bottom: -10px;
+}
+
+section.letter-body {
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+a {
+    color: var(--color-blue);
+    text-decoration: none;
+    /* font-weight: 600; */
+}
+
+a:hover {
+    color: var(--color-blue);
+    background-color: var(--color-persname-highlight);
+    /* text-decoration: underline; */
+    /* font-weight: 600; */
+}
+
+a[class^="persName"]{
+    color: var(--color-persname);
+}
+
+a[class^="persName"]:hover{
+    color: var(--color-persname);
+    background-color: var(--color-persname-highlight);
+    padding-top: 0.5;
+    padding-right: 0.5;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+a[class^="bibl"]{
+    color: var(--color-work) !important;
+    font-style: italic;
+}
+
+a[class^="bibl"]:hover{
+    color: var(--color-work);
+    background-color: var(--color-work-highlight);
+    border-radius: 3px;
+    text-decoration: none;
+    font-style: italic;
+}
+
+a[href="#back-to-letter"]{
+    color: var(--color-blue);
+    text-decoration: none;
+    font-weight: lighter !important;
+    font-style: italic;
+    /* font-size: 14px; */
+}
+
+salute {font-style: italic;}
+
+h2 {
+    font-family: var(--font-ui);
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--color-blue);
+    border-bottom: #5e7f9a solid 1px;
+    font-size: 24px;
+    padding-bottom: 10px;
+    /* background-color: var(--color-blue);
+    background-color: hsla(207, 24%, 49%, 0.3); */
+}
+
+a[class~="tooltip"] {
+    position: relative;
+    cursor: pointer;
+    text-decoration: dotted underline;
+    color: var(--color-text);
+}
+
+/* Tooltip box styling */
+a[class~="tooltip"]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%;
+    /* left: 00%; */
+    transform: translateX(-50%);
+    padding: 4px 8px;
+    background-color: var(--color-background);
+    color: black;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: 400;
+    width: 300px;
+    max-width: 400px !important;
+    max-height: 80px;
+    overflow-y: auto;
+    white-space: normal;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s;
+    font-family: var(--font-ui);
+    font-style: normal;
+    line-height: 1.2;
+    text-align: justify;
+    border: 1px solid black;
+}
+
+/* Show tooltip on hover */
+a[class~="tooltip"]:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+
+.quote {
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: var(--font-ui);
+    font-size: 14px;
+    color: #898989;
+    font-weight: lighter;
+}
